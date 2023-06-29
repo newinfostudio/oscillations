@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const carouselEls = Array.from(document.querySelectorAll('.default-carousel'))
   const dropdowns = Array.from(document.querySelectorAll('.dropdown'))
   const vids = Array.from(document.querySelectorAll('.video-player'))
+  const navLinks = Array.from(document.getElementById('nav-links').querySelectorAll('a'))
 
   /* BACK TO TOP */
   backToTop.addEventListener('click', function () { 
@@ -64,6 +65,20 @@ document.addEventListener('DOMContentLoaded', function () {
       el.classList.add('playing')
 
       video.play()
+    })
+  })
+
+  /* Nav Links */
+  navLinks.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const href = el.getAttribute('href')
+      const target = document.querySelector(href)
+
+      target.scrollIntoView({
+        behavior: 'smooth'
+      })
     })
   })
 })
