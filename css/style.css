@@ -32,6 +32,7 @@ body {
   font-size: var(--text-sm);
   line-height: 1.03;
   font-weight: 600;
+  color: black;
 }
 
 p,
@@ -48,6 +49,7 @@ h6 {
   font-family: var(--font-primary);
   font-weight: 600;
   line-height: 1.03;
+  color: black;
 }
 
 button {
@@ -183,6 +185,7 @@ a.def-link:hover {
 
 .dropdown .content-inner p {
   font-size: var(--text-sm);
+  line-height: 1.08;
 }
 
 .dropdown .content-inner .content-left > * + *,
@@ -313,6 +316,7 @@ a.def-link:hover {
 
 #bean .info-item * {
   font-size: var(--text-sm);
+  line-height: 1.08;
 }
 
 #bean .info-item p:first-child {
@@ -348,10 +352,11 @@ a.def-link:hover {
 
 #roasts .info-item * {
   font-size: var(--text-sm);
+  line-height: 1.08;
 }
 
 #roasts .info-item p:first-child {
-  width: 25%;
+  width: 35%;
   flex: none;
 }
 
@@ -361,6 +366,7 @@ a.def-link:hover {
 
 #roasts .content h3 {
   font-size: var(--text-sm);
+  line-height: 1.08;
 }
 
 #roasts .roast-intro {
@@ -388,6 +394,7 @@ a.def-link:hover {
   aspect-ratio: 16/9;
   position: relative;
   background-color: #e4e4e4;
+  margin-bottom: var(--spacing-lg);
 }
 
 #documentation .video-player video {
@@ -438,6 +445,10 @@ a.def-link:hover {
   position: relative;
 }
 
+#documentation .default-carousel .swiper {
+  aspect-ratio: 16/9;
+}
+
 /* TEAM SECTION  */
 
 #team .team-item > div:first-child {
@@ -449,7 +460,7 @@ a.def-link:hover {
   text-indent: 10vw;
 }
 
-#team .team-item>div:first-child p:nth-child(1) {
+#team .team-item .icon {
   width: 10vw;
 }
 
@@ -539,6 +550,7 @@ body.back-to-top-active #back-to-top-section {
 
   .default-carousel .buttons * {
     font-size: var(--text-sm);
+    line-height: 1.08;
   }
 
   #bean .info-item p:first-child {
@@ -548,6 +560,10 @@ body.back-to-top-active #back-to-top-section {
   #roasts .content .graph {
     grid-template-columns: repeat(2, 1fr);
     margin: 0;
+  }
+
+  #roasts .info-item p:first-child {
+    width: 25%;
   }
 
   #team .team-item>div:first-child div {
