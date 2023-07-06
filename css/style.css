@@ -183,7 +183,19 @@ a.def-link:hover {
   grid-column: span 1 / span 1;
 }
 
-.dropdown .content-inner p {
+.dropdown .content-inner .content-left .small-indent p:not(:first-of-type) {
+  text-indent: 5vw;
+}
+
+.dropdown .content-inner .content-left sup {
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.dropdown .content-inner p,
+.dropdown .content-inner h1,
+.dropdown .content-inner h2,
+.dropdown .content-inner h3 {
   font-size: var(--text-sm);
   line-height: 1.08;
 }
@@ -217,6 +229,10 @@ a.def-link:hover {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
+}
+
+#nav-links li a:hover * {
+  color: blue;
 }
 
 /* HERO SECTION - HOME PAGE */
